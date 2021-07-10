@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Zuri_pjt_linkedin.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Zuri_pjt_linkedin.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <include layout="@layout/content_signin" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@drawable/linkedin_logo_transparent"/>
+            <TextView
+                android:id="@+id/join_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/join_now"
+                android:textColor="#0B63FF"
+                android:textSize="20sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:layout_below="@id/img_view"/>
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingStart="0dp"
+                android:hint="@string/email_or_phone"
+                android:paddingLeft="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@color/white"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:hint="Password"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="#013A3A"
+            android:text="Remember me." />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textColor="#0B63FF"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/continue1"
+            app:backgroundTint="#0B63FF"
+            app:cornerRadius="16dp"
+            android:layout_marginBottom="32dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/divider"
+                android:padding="16dp"
+                android:layout_width="180dp"
+                android:layout_height="4dp"
+                android:background="?android:attr/listDivider" />
+            <TextView
+                android:id="@+id/text_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or"
+                android:layout_toEndOf="@id/divider"
+                android:layout_toRightOf="@id/divider" />
+            <View
+                android:id="@+id/divider1"
+                android:padding="16dp"
+                android:layout_width="180dp"
+                android:layout_height="4dp"
+                android:layout_toEndOf="@id/text_or"
+                android:background="?android:attr/listDivider"
+                android:layout_toRightOf="@id/text_or" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/sign_in_with_google"
+            android:textAllCaps="false"
+            android:textColor="#0B63FF"
+            android:backgroundTint="#FFF"
+            android:drawableStart="@drawable/google_icon"
+            app:cornerRadius="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            app:strokeColor="#0B63FF"
+            app:strokeWidth="2dp"
+            android:drawableLeft="@drawable/google_icon" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "zuri_pjt_linkedin"

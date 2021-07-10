@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">zuri_pjt_linkedin</string>
+    <string name="title_activity_signin">SigninActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="join_now">Join now</string>
+    <string name="continue1">Continue</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="or_sign_in">or sign in</string>
+    <string name="linkedin_logo">LinkedIn logo</string>
+    <string name="join_linkedin">Join LinkedIn</string>
+    <string name="search">Search</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_network">My Network</string>
+    <string name="menu_post">Post</string>
+    <string name="menu_notify">Notifications</string>
+    <string name="menu_jobs">Jobs</string>
+    <string name="user_name">User name</string>
+    <string name="wimbledon_united_kingdom">Wimbledon, United Kingdom.</string>
+    <string name="ceo_at_google">CEO at Google</string>
+    <string name="sms_text">You agree to the LinkedIn User Agreement, Privacy Policy, and Cookie Policy. For phone number signups we will send a verification code via SMS.</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="email_or_phone">Email or Phone</string>
+</resources>
